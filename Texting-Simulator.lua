@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Texting-Simulator-Roblox/main/Texting-Simulator.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("TEXTING SIMULATOR", "DarkTheme")
 
 local Main = Window:NewTab("Main")
