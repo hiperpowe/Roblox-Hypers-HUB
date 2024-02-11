@@ -82,6 +82,65 @@ UISection:NewKeybind("Show/Hide GUI", "Toggle UI", Enum.KeyCode.Insert, function
 end)
 end)
 
+ScriptsSection:NewButton("Thief Simulaor", "Load Thief Simulator", function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Thief Simulator", "Synapse")
+
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Thief Simulator Load", Duration = 4,})
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Usual Stuff")
+
+MainSection:NewSlider("WalkSpeed", "Move Faster", 200, 16, function(s) -- 200 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+local TP = Window:NewTab("Teleoprt")
+local TPSection = TP:NewSection("Teleport To Stores/Other")
+
+TPSection:NewButton("Shop", "Shop Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.1039581, 131.591919, 473.312531, -0.999963105, -8.12291456e-10, 0.00858676527, -3.28800265e-10, 1, 5.63079681e-08, -0.00858676527, 5.63030689e-08, -0.999963105)
+end)
+
+TPSection:NewButton("Sell", "Sell location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7.26882792, 131.891876, 483.403503, -0.999997914, 3.42420647e-10, 0.0020533388, 1.8721806e-10, 1, -7.55856746e-08, -0.0020533388, -7.55851275e-08, -0.999997914)
+end)
+
+TPSection:NewButton("Skin Shop", "Skin Shop Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42.5879135, 131.591904, 466.881714, -0.973915875, -1.97435828e-08, 0.226909384, 3.24438454e-09, 1, 1.00936063e-07, -0.226909384, 9.90394184e-08, -0.973915875)
+end)
+
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Destroy Stuff")
+
+MiscSection:NewButton("Destroy Border Zone 2", "It will destroy Border Zone 2", function()
+    game.workspace["Zone 2"]:Destroy()
+end)
+
+MiscSection:NewButton("Destroy Border Zone 3", "It will destroy Border Zone 3", function()
+    game.workspace["Zone 3"]:Destroy()
+end)
+
+MiscSection:NewButton("No World blockers", "All World blockers Destroyed", function()
+    game.workspace.MapBlockers:Destroy()
+end)
+
+MiscSection:NewButton("No Water", "Make water go bye bye", function()
+    game.workspace.Water:Destroy()
+end)
+
+local UI = Window:NewTab("UI Toggle")
+local UISection = UI:NewSection("Show/Hide")
+
+UISection:NewKeybind("Show/Hide GUI", "Toggle UI", Enum.KeyCode.Insert, function()
+	Library:ToggleUI()
+end)
+end)
+
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("I used cooolchill_X's scripts to help me with this")
 
