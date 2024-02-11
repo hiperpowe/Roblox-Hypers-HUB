@@ -100,7 +100,7 @@ MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (Max
 end)
 
 local TP = Window:NewTab("Teleoprt")
-local TPSection = TP:NewSection("Teleport To Stores/Other")
+local TPSection = TP:NewSection("Teleport To Stores")
 
 TPSection:NewButton("Shop", "Shop Location", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.1039581, 131.591919, 473.312531, -0.999963105, -8.12291456e-10, 0.00858676527, -3.28800265e-10, 1, 5.63079681e-08, -0.00858676527, 5.63030689e-08, -0.999963105)
@@ -112,6 +112,30 @@ end)
 
 TPSection:NewButton("Skin Shop", "Skin Shop Location", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42.5879135, 131.591904, 466.881714, -0.973915875, -1.97435828e-08, 0.226909384, 3.24438454e-09, 1, 1.00936063e-07, -0.226909384, 9.90394184e-08, -0.973915875)
+end)
+
+local TPSection = TP:NewSection("Teleport To Zones")
+
+TPSection:NewButton("Zone 2", "Teleport to zone 2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(170.721344, 131.591919, -33.0390434, 0.996533275, -5.00686688e-12, 0.0831950679, -1.29650468e-09, 1, 1.55900697e-08, -0.0831950679, -1.56438862e-08, 0.996533275)
+end)
+
+TPSection:NewButton("Zone 3", "Teleport to zone 3", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(119.738968, 131.931885, -185.338638, 0.999931753, 8.43173211e-08, -0.0116845313, -8.42892121e-08, 1, 2.89815461e-09, 0.0116845313, -1.91307681e-09, 0.999931753)
+end)
+
+local TPSection = TP:NewSection("ROB PLACES TP")
+
+TPSection:NewButton("Bank", "Bank Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.24263, 133.569977, -83.7240906, -0.0301958565, 6.05330825e-08, 0.999544024, -4.33842651e-09, 1, -6.0691761e-08, -0.999544024, -6.16908791e-09, -0.0301958565)
+end)
+
+TPSection:NewButton("Royal Ice", "Royal Ice Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-134.525803, 131.691925, -235.226578, 0.00362322433, 8.77664377e-08, -0.999993443, -7.18224635e-09, 1, 8.77409931e-08, 0.999993443, 6.86429402e-09, 0.00362322433)
+end)
+
+TPSection:NewButton("Tech Shop", "Tech Shop Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(415.90683, 131.891876, -238.365814, 0.000718526659, 3.86310361e-08, -0.999999762, 2.26053523e-08, 1, 3.86472863e-08, 0.999999762, -2.26331149e-08, 0.000718526659)
 end)
 
 local Misc = Window:NewTab("Misc")
@@ -138,6 +162,37 @@ local UISection = UI:NewSection("Show/Hide")
 
 UISection:NewKeybind("Show/Hide GUI", "Toggle UI", Enum.KeyCode.Insert, function()
 	Library:ToggleUI()
+end)
+
+UISection:NewTextBox("Change Locking text", "Chenges the text of the lockpick text", function(txt)
+	game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.Text = txt
+end)
+
+UISection:NewToggle("RGB Text", "red green blue", function(state)
+    if state then
+        i = true
+        while wait() do
+            if i == true then
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 0, 0)
+                wait(0.5)
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 85, 0)
+                wait(0.5)
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 255, 0)
+                wait(0.5)
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(0, 255, 0)
+                wait(0.5)
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(0, 0, 255)
+                wait(0.5)
+                game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 0, 255)
+            elseif i == false then
+                break
+            end
+        end
+    else
+        i = false
+        wait(1)
+        game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    end
 end)
 end)
 
