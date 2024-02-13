@@ -95,7 +95,7 @@ MainSection:NewSlider("WalkSpeed", "Move Faster", 200, 16, function(s) -- 200 (M
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (MaxValue) | 50 (MinValue)
+MainSection:NewSlider("JumpPower (Broken)", "Jump High", 200, 50, function(s) -- 200 (MaxValue) | 50 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
@@ -117,11 +117,11 @@ end)
 local TPSection = TP:NewSection("Teleport To Zones")
 
 TPSection:NewButton("Zone 2", "Teleport to zone 2", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(170.721344, 131.591919, -33.0390434, 0.996533275, -5.00686688e-12, 0.0831950679, -1.29650468e-09, 1, 1.55900697e-08, -0.0831950679, -1.56438862e-08, 0.996533275)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(251.655548, 131.591919, -113.79483, 0.999346554, 2.67568134e-10, -0.0361456648, -1.29325786e-10, 1, 3.82692855e-09, 0.0361456648, -3.81975296e-09, 0.999346554)
 end)
 
 TPSection:NewButton("Zone 3", "Teleport to zone 3", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(119.738968, 131.931885, -185.338638, 0.999931753, 8.43173211e-08, -0.0116845313, -8.42892121e-08, 1, 2.89815461e-09, 0.0116845313, -1.91307681e-09, 0.999931753)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-166.608109, 131.591919, -199.625458, 0.998928905, -1.11938911e-08, -0.0462718122, 1.11929301e-08, 1, -2.79864409e-10, 0.0462718122, -2.38352532e-10, 0.998928905)
 end)
 
 local TPSection = TP:NewSection("ROB PLACES TP")
@@ -155,6 +155,20 @@ end)
 
 MiscSection:NewButton("No Water", "Make water go bye bye", function()
     game.workspace.Water:Destroy()
+end)
+
+local MiscSection = Misc:NewSection("Destroy Walls to Stores")
+
+MiscSection:NewButton("Royal Ice Modifirs/BETA", "Destroys the walls", function()
+    game.workspace.World1.Stores["Jewelry Stores"]["Jewelry Store"].BuildingModel.Building:Destroy()
+end)
+
+MiscSection:NewButton("Tech Shop Modifirs/BETA", "Destroys the walls", function()
+    game.workspace.World1.Stores["Tech Stores"]["Tech Store"].BuildingModel.Building:Destroy()
+end)
+
+MiscSection:NewButton("Bank Modifirs/BETA", "Destroys the walls", function()
+    game.workspace.World1.Stores.Banks.Bank.BuildingModel.Building:Destroy()
 end)
 
 local UI = Window:NewTab("UI Toggle")
