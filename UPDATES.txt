@@ -16,3 +16,7 @@ Thief Simulator (added)
 
 2/11/2024
 Thief Simulator updated (added Change Locking text, added Teleport To Zones, added ROB PLACES TP, added locking text RGB color)
+
+2/12/2024
+Thief Simulator updated (Added Destroy walls to Bank,Royal Ice, and Tech Shop)
+Destroy walls script is still In beta so the game might crash
