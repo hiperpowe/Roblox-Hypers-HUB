@@ -22,3 +22,7 @@ Thief Simulator updated (Added Destroy walls to Bank,Royal Ice, and Tech Shop)
 Destroy walls script is still In beta so the game might crash
 
 New update coming soon to thief simulator. (New update coming on 2/13/2024 esmated)
+
+2/13/2024
+Thief Simulator updated (Added Destroy Lasers/Water Puddles/ Bear traps to the Bank, and the Royal Ice)
+They are in Beta so sometimes it does not work.     The Destroy walls script is no longer in BETA YAY
