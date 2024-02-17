@@ -29,3 +29,4 @@ They are in Beta so sometimes it does not work.     The Destroy walls script is 
 
 2/16/2024
 Thief Simulator updated (added Bets Shop Modifier to the stor and more!!)
+This script my not work if it does not work make a coment of what script does not work
