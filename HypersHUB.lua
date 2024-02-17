@@ -139,7 +139,7 @@ TPSection:NewButton("Tech Shop", "Tech Shop Location", function()
 end)
 
 TPSection:NewButton("Bets Shop", "Bets Shop Location", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.165512, 131.891907, 142.330154, 0.0101894038, -1.6319099e-08, -0.999948084, -4.21303853e-10, 1, -1.63242397e-08, 0.999948084, 5.87616233e-10, 0.0101894038)
 end)
 
 local Misc = Window:NewTab("Misc")
@@ -176,6 +176,10 @@ MiscSection:NewButton("Bank Modifirs", "Destroys the walls", function()
     game.workspace.World1.Stores.Banks.Bank.BuildingModel.Building:Destroy()
 end)
 
+MiscSection:NewButton("BETS Modifirs/BETA", "Destroys the walls", function()
+    game:GetService("Workspace").World1.Stores["Betting Stores"]["Betting Store"].BuildingModel.Building:Destroy()
+end)
+
 local useful = Window:NewTab("Useful for Heists")
 local usefulSection = useful:NewSection("Destroy Lasers")
 
@@ -190,6 +194,12 @@ usefulSection:NewButton("No Lasers/Bear Trap In Royal Ice/BETA", "Destroys all L
     game:GetService("Workspace").World1.Stores["Jewelry Stores"]["Jewelry Store"].BuildingModel.Layout1:Destroy()
     game:GetService("Workspace").World1.Stores["Jewelry Stores"]["Jewelry Store"].BuildingModel.LasersRotation:Destroy()
     game:GetService("Workspace").World1.Stores["Jewelry Stores"]["Jewelry Store"].BuildingModel.BearTrap:Destroy()
+end)
+
+usefulSection:NewButton("No lasers/ BearTrap In BETS/BETA", "Destroys the walls", function()
+    game:GetService("Workspace").World1.Stores["Betting Stores"]["Betting Store"].BuildingModel.Layout2:Destroy()
+    game:GetService("Workspace").World1.Stores["Betting Stores"]["Betting Store"].BuildingModel.Layout1:Destroy()
+    game:GetService("Workspace").World1.Stores["Betting Stores"]["Betting Store"].BuildingModel.BearTrap:Destroy()
 end)
 
 local usefulSection = useful:NewSection("Destroy Water Puddles")
