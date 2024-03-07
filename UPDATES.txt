@@ -34,3 +34,6 @@ This script my not work if it does not work make a coment of what script does no
 3/1/2024
 Scripts coming soon (Bee Swarm simulator, Broken bones V, 3008 [2.72] - If It does not have a anti-cheat)
 Hypers HUB updated (added cooolchillX-HUB Script load string)
+
+3/7/2024
+Hypers HUB updated (Added cooolchillX-CMD HUB Script load string)
