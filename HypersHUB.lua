@@ -1,6 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Hyper's HUB", "Synapse")
 
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Hyper's HUB Load", Duration = 4,})
+
 local Main = Window:NewTab("READ")
 local MainSection = Main:NewSection("Pls Don't abuse this scripts")
 local MainSection = Main:NewSection("You can use this scripts at you oun risk")
@@ -244,6 +246,48 @@ UISection:NewToggle("RGB Text", "red green blue", function(state)
         wait(1)
         game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     end
+end)
+end)
+
+ScriptsSection:NewButton("Bee Swarm Simulator", "Load Bee Swarm Simulator", function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bee Swarm simulator BATA", "Synapse")
+
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Bee Swarm simulator", Duration = 4,})
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Usual Stuff")
+
+MainSection:NewSlider("WalkSpeed", "Move Faster", 200, 16, function(s) -- 200 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+local TP = Window:NewTab("Teleoprt")
+local TPSection = TP:NewSection("Teleport To Areas")
+
+TPSection:NewButton("Spawn", "Spawn Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-112.78299, 5.38673592, 272.754974, -0.999997735, 1.9149784e-09, 0.00212084502, 1.67967473e-09, 1, -1.10949884e-07, -0.00212084502, -1.10946068e-07, -0.999997735)
+end)
+
+TPSection:NewButton("Bee shop", "Bee Shop Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-233.446976, 18.1142845, 371.462799, -0.999925554, 7.17706738e-09, -0.0122004068, 8.02057265e-09, 1, -6.90885216e-08, 0.0122004068, -6.91812332e-08, -0.999925554)
+end)
+
+local TPSection = TP:NewSection("Area 1")
+
+TPSection:NewButton("Shop 1", "Shop 1 Location", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56.1367607, 5.12320185, 293.543396, 0.0254926514, 8.81258373e-08, -0.999675035, 5.93410113e-11, 1, 8.81559998e-08, 0.999675035, -2.30665176e-09, 0.0254926514)
+end)
+
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Destroy Gates")
+
+MiscSection:NewButton("Destroys all Gates", "Destroys All of the gates", function()
+    game.workspace.Gates:Destroy()
 end)
 end)
 
