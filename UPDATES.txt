@@ -39,5 +39,6 @@ Hypers HUB updated (added cooolchillX-HUB Script load string)
 Hypers HUB updated (Added cooolchillX-CMD HUB Script load string)
 Bee Swarm Simulator Added (This Script Is still In bata)
 
+3/8/2024
 Added (Hypers HUB BUG REPORT google form To the github)
 You can send a bug report if a script is having issus/Proplems.
