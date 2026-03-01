@@ -48,3 +48,6 @@ Added (Hypers HUB Game suggestions google form To the github --- You can send a 
 
 8/6/2024
 Sad News (The dev of Bee Swarm Simulator they have disabled DEX so i can not work on the Bee Sworm Simulator Script any more sorry!)
+
+3/1/2026
+Updated INFAMY (added Instant Interaction)
