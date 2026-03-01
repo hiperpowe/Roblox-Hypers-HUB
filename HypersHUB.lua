@@ -29,6 +29,28 @@ MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (Max
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+local Toggle = false
+
+MainSection:NewToggle("Instant Interaction", "No Delay", function(state)
+    Toggle = state
+
+    for _, v in pairs(workspace:GetDescendants()) do
+        if v:IsA("ProximityPrompt") then
+            if Toggle then
+                v.HoldDuration = 0.1
+            else
+                v.HoldDuration = 1
+            end
+        end
+    end
+end)
+
+workspace.DescendantAdded:Connect(function(v)
+    if Toggle and v:IsA("ProximityPrompt") then
+        v.HoldDuration = 0
+    end
+end)
+
 local TP = Window:NewTab("Teleport")
 local TPSection = TP:NewSection("Teleport To Stores")
 
