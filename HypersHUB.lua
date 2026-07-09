@@ -429,10 +429,10 @@ CreditsSection:NewButton("cooolchill_X's Github link", "Copies to clipboad", fun
     game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Copied To Clipboard", Duration = 4,})
 end)
 
-CreditSection:NewButton("Load cooolchill_X HUB", "Load cooolchill_X HUB", function()
+CreditsSection:NewButton("Load cooolchill_X HUB", "Load cooolchill_X HUB", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/HUB.lua"))()
 end)
 
-CreditSection:NewButton("Load cooolchill_X CMD HUB", "Load cooolchill_X CMD HUB", function()
+CreditsSection:NewButton("Load cooolchill_X CMD HUB", "Load cooolchill_X CMD HUB", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/CMD%20Hub.lua"))()
 end)
