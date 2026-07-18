@@ -13,10 +13,9 @@ local Scripts = Window:NewTab("Script hub")
 local ScriptsSection = Scripts:NewSection("All of the scripts")
 
 ScriptsSection:NewButton("INFAMY", "Load INFAMY", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "INFAMY", Duration = 2,})
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("INFAMY", "DarkTheme")
-
-game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "INFAMY Load", Duration = 4,})
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Usual Stuff")
@@ -92,6 +91,10 @@ TPSection:NewButton("Bank 3", "Bank Location 3", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-251.518585, 33.2163467, -255.919022, -0.05380309, -4.99890938e-08, 0.998551548, -7.8691464e-08, 1, 4.58216185e-08, -0.998551548, -7.61121441e-08, -0.05380309)
 end)
 
+TPSection:NewButton("Police Station Armory", "Police Station Armory Location ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-701.103821, 5.99999952, 521.847656, 0.982526362, -4.74555542e-08, -0.186123535, 5.33632978e-08, 1, 2.67311417e-08, 0.186123535, -3.61962158e-08, 0.982526362)
+end)
+
 local TPSection = TP:NewSection("Teleport to Hideout Location")
 
 TPSection:NewButton("Hideout", "Hideout Location", function()
@@ -104,13 +107,13 @@ local UISection = UI:NewSection("Show/Hide")
 UISection:NewKeybind("Show/Hide GUI", "Toggle UI", Enum.KeyCode.Insert, function()
 	Library:ToggleUI()
 end)
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "INFAMY", Duration = 2,})
 end)
 
 ScriptsSection:NewButton("Thief Simulaor", "Load Thief Simulator", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Thief Simulaor", Duration = 2,})
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Thief Simulator", "Synapse")
-
-game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Thief Simulator Load", Duration = 4,})
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Usual Stuff")
@@ -269,52 +272,11 @@ UISection:NewToggle("RGB Text", "red green blue", function(state)
         game:GetService("Players").LocalPlayer.PlayerGui.Tasks.Container.Lockpick.Circle.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     end
 end)
-end)
-
-local ScriptsSection = Scripts:NewSection("The dev of Bee Swarm Simulator they have disabled DEX so i can not work on this Script any more!")
-ScriptsSection:NewButton("Bee Swarm Simulator", "Load Bee Swarm Simulator", function()
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Bee Swarm simulator BATA", "Synapse")
-
-game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Bee Swarm simulator", Duration = 4,})
-
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Usual Stuff")
-
-MainSection:NewSlider("WalkSpeed", "Move Faster", 200, 16, function(s) -- 200 (MaxValue) | 16 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-MainSection:NewSlider("JumpPower", "Jump High", 200, 50, function(s) -- 200 (MaxValue) | 50 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
-
-local TP = Window:NewTab("Teleoprt")
-local TPSection = TP:NewSection("Teleport To Areas")
-
-TPSection:NewButton("Spawn", "Spawn Location", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-112.78299, 5.38673592, 272.754974, -0.999997735, 1.9149784e-09, 0.00212084502, 1.67967473e-09, 1, -1.10949884e-07, -0.00212084502, -1.10946068e-07, -0.999997735)
-end)
-
-TPSection:NewButton("Bee shop", "Bee Shop Location", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-233.446976, 18.1142845, 371.462799, -0.999925554, 7.17706738e-09, -0.0122004068, 8.02057265e-09, 1, -6.90885216e-08, 0.0122004068, -6.91812332e-08, -0.999925554)
-end)
-
-local TPSection = TP:NewSection("Area 1")
-
-TPSection:NewButton("Shop 1", "Shop 1 Location", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56.1367607, 5.12320185, 293.543396, 0.0254926514, 8.81258373e-08, -0.999675035, 5.93410113e-11, 1, 8.81559998e-08, 0.999675035, -2.30665176e-09, 0.0254926514)
-end)
-
-local Misc = Window:NewTab("Misc")
-local MiscSection = Misc:NewSection("Destroy Gates")
-
-MiscSection:NewButton("Destroys all Gates", "Destroys All of the gates", function()
-    game.workspace.Gates:Destroy()
-end)
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Thief Simulaor", Duration = 2,})
 end)
 
 ScriptsSection:NewButton("Pet Cathers", "Load Bee Swarm Simulator", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Pet Cathers", Duration = 2,})
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Pet Chechers", "Synapse")
 
@@ -419,6 +381,32 @@ local GamesSection = Games:NewSection("NEEDS GOLDEN TICKETS")
 GamesSection:NewButton("Archeologist Quest", "Enter the dig Quest Location", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1844.45361, 51.6008224, 265.181458, -0.141438663, 6.37461817e-13, -0.989947021, 4.29625817e-13, 1, 5.82552507e-13, 0.989947021, -3.42911355e-13, -0.141438663)
 end)
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Pet Cathers", Duration = 2,})
+end)
+
+local coolchill_X = Window:NewTab("coolchill_X's Scripts")
+local coolchill_XSection = coolchill_X:NewSection("Some of coolchill_X's Scripts")
+
+coolchill_XSection:NewButton("Refinery Caves 2", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Refinery%20Caves%202.lua"))()
+end)
+coolchill_XSection:NewButton("Criminality", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Criminality.lua"))()
+end)
+coolchill_XSection:NewButton("LAST FLOOR", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/LAST%20FLOOR.lua"))()
+end)
+coolchill_XSection:NewButton("ROB IT", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/ROB%20IT.lua"))()
+end)
+coolchill_XSection:NewButton("Mine A Mountain", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Mine%20A%20Mountain.lua"))()
+end)
+coolchill_XSection:NewButton("CQB Hell", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/CQB%20Hell.lua"))()
+end)
+coolchill_XSection:NewButton("Notoriety", "Load The GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Notoriety.lua"))()
 end)
 
 local Credits = Window:NewTab("Credits")
