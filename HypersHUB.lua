@@ -384,31 +384,6 @@ end)
 game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Pet Cathers", Duration = 2,})
 end)
 
-local coolchill_X = Window:NewTab("coolchill_X's Scripts")
-local coolchill_XSection = coolchill_X:NewSection("Some of coolchill_X's Scripts")
-
-coolchill_XSection:NewButton("Refinery Caves 2", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Refinery%20Caves%202.lua"))()
-end)
-coolchill_XSection:NewButton("Criminality", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Criminality.lua"))()
-end)
-coolchill_XSection:NewButton("LAST FLOOR", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/LAST%20FLOOR.lua"))()
-end)
-coolchill_XSection:NewButton("ROB IT", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/ROB%20IT.lua"))()
-end)
-coolchill_XSection:NewButton("Mine A Mountain", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Mine%20A%20Mountain.lua"))()
-end)
-coolchill_XSection:NewButton("CQB Hell", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/CQB%20Hell.lua"))()
-end)
-coolchill_XSection:NewButton("Notoriety", "Load The GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/ScriptHubSources/refs/heads/main/Notoriety.lua"))()
-end)
-
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("I used cooolchill_X's scripts to help me with this")
 
@@ -417,10 +392,23 @@ CreditsSection:NewButton("cooolchill_X's Github link", "Copies to clipboad", fun
     game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Copied To Clipboard", Duration = 4,})
 end)
 
-CreditsSection:NewButton("Load cooolchill_X HUB", "Load cooolchill_X HUB", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/HUB.lua"))()
+local CreditsSection = Credits:NewSection("Use low level cooolchill_X HUB if you have Xeno Or Solara")
+CreditsSection:NewToggle("Auto Detect", "Toggles Auto Detect mode for cooolchill_X HUB", function(state)
+    if state then
+        _G.autodetect = true
+    else
+        _G.autodetect = false
+    end
 end)
 
-CreditsSection:NewButton("Load cooolchill_X CMD HUB", "Load cooolchill_X CMD HUB", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/CMD%20Hub.lua"))()
+CreditsSection:NewToggle("LowLevelExecutor", "Toggles Low Level Executor mode for cooolchill_X HUB", function(state)
+    if state then
+        _G.LowLevelExecutor = true
+    else
+        _G.LowLevelExecutor = false
+    end
+end)
+
+CreditsSection:NewButton("Load cooolchill_X HUB", "Load cooolchill_X HUB", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/HUB.lua"))()
 end)
