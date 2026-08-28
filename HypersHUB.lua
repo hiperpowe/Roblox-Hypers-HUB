@@ -392,20 +392,11 @@ CreditsSection:NewButton("cooolchill_X's Github link", "Copies to clipboad", fun
     game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Copied To Clipboard", Duration = 4,})
 end)
 
-local CreditsSection = Credits:NewSection("Use low level cooolchill_X HUB if you have Xeno Or Solara")
 CreditsSection:NewToggle("Auto Detect", "Toggles Auto Detect mode for cooolchill_X HUB", function(state)
     if state then
         _G.autodetect = true
     else
         _G.autodetect = false
-    end
-end)
-
-CreditsSection:NewToggle("LowLevelExecutor", "Toggles Low Level Executor mode for cooolchill_X HUB", function(state)
-    if state then
-        _G.LowLevelExecutor = true
-    else
-        _G.LowLevelExecutor = false
     end
 end)
 
