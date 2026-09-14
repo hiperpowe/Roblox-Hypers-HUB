@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Hyper's HUB", "Synapse")
+local Window = Library.CreateLib("Hyper's HUB", "Serpent")
 
 game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Hyper's HUB Load", Duration = 4,})
 
