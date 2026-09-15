@@ -3,13 +3,12 @@
 Hypers hub Created
 INFAMY added
 
-2/11/2024
-Thief Simulator added
-
------------------------------------------------------------------------LOADSTRING TO HUB CREATED----------------------------------------------------------------------
 2/10/2024
 INFAMY Updated (Added Teleport)
 Load String updated
+
+2/11/2024
+Thief Simulator added
 
 2/11/2024
 Thief Simulator (added)
@@ -51,3 +50,7 @@ Sad News (The dev of Bee Swarm Simulator they have disabled DEX so i can not wor
 
 3/1/2026
 Updated INFAMY (added Instant Interaction)
+
+9/15/2026
+Added (Tycoon RNG: Refinery)
+Fixed (Fixed typos on HypersHUB)
