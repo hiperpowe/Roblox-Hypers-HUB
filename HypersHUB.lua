@@ -36,6 +36,12 @@ ScriptsSection:NewButton("Tycoon RNG: Refinery", "Load Tycoon RNG: Refinery", fu
 game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Tycoon RNG: Refinery", Duration = 2,})
 end)
 
+ScriptsSection:NewButton("West Wood Remake", "Load West Wood Remake", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "West Wood Remake", Duration = 2,})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/West%20Wood%20Remake.lua"))()
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "West Wood Remake", Duration = 2,})
+end)
+
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("I used cooolchill_X's scripts to help me with this")
 
