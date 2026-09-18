@@ -54,3 +54,6 @@ Updated INFAMY (added Instant Interaction)
 9/15/2026
 Added (Tycoon RNG: Refinery)
 Fixed (Fixed typos on HypersHUB)
+
+9/17/2026
+Added (West Wood Remake)
