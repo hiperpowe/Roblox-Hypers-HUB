@@ -57,3 +57,6 @@ Fixed (Fixed typos on HypersHUB)
 
 9/17/2026
 Added (West Wood Remake)
+
+9/17/2026 
+Updated Tycoon RNG: Refinery(Added Background to Cube ESP)
