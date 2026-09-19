@@ -60,3 +60,6 @@ Added (West Wood Remake)
 
 9/17/2026 
 Updated Tycoon RNG: Refinery(Added Background to Cube ESP)
+
+9/18/2026 
+Updated West Wood: Remake (Added Open Dealer's Shop, Dealer ESP. Updated Wendigo ESP)
