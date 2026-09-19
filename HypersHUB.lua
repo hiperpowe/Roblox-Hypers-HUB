@@ -50,14 +50,6 @@ CreditsSection:NewButton("cooolchill_X's Github link", "Copies to clipboad", fun
     game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Copied To Clipboard", Duration = 4,})
 end)
 
-CreditsSection:NewToggle("Auto Detect", "Toggles Auto Detect mode for cooolchill_X HUB", function(state)
-    if state then
-        _G.autodetect = true
-    else
-        _G.autodetect = false
-    end
-end)
-
 CreditsSection:NewButton("Load cooolchill_X HUB", "Load cooolchill_X HUB", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/main/HUB.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cooolchillX/cooolchillX-HUB/refs/heads/main/Hub%20Loadstring.lua"))()
 end)
