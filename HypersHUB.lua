@@ -42,6 +42,12 @@ ScriptsSection:NewButton("West Wood Remake", "Load West Wood Remake", function()
 game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "West Wood Remake", Duration = 2,})
 end)
 
+ScriptsSection:NewButton("Jewelry Empire", "Load Jewelry Empire", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Jewelry Empire", Duration = 2,})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/Jewelry%20Empire.lua"))()
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Jewelry Empire", Duration = 2,})
+end)
+
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("I used cooolchill_X's scripts to help me with this")
 
