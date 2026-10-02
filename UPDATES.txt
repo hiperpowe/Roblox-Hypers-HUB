@@ -1,4 +1,7 @@
 ------------------------------------------------------------------Hypers HUB CREATED----------------------------------------------------------------------------------
+10/1/2026
+Added (Jewelry Empire)
+
 9/28/2026
 Updated West Wood: Remake(Added Godmode, Destroy Environment Effects, Anti Local Damage)
 
