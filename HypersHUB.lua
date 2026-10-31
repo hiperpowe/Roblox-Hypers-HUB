@@ -45,9 +45,9 @@ ScriptHub:AddButton("West Wood Remake", function()
 end)
 
 ScriptHub:AddButton("Sell Jewelry!", function()
-    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Jewelry Empire", Duration = 2,})
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/Jewelry%20Empire.lua"))()
-    game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Jewelry Empire", Duration = 2,})
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Sell Jewelry!", Duration = 2,})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/Sell%20Jewelry!.lua"))()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Sell Jewelry!", Duration = 2,})
 end)
 
 local Credits = window:AddTab("Credits")
