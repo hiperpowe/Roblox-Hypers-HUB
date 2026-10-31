@@ -11,6 +11,9 @@ local ScriptHub = window:AddTab("Script Hub")
 ScriptHub:AddButton("Close Hypers Hub", function()
     game.CoreGui.imgui:Destroy()
 end)
+
+ScriptHub:AddLabel("")
+
 ScriptHub:AddButton("Infamy", function()
     game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "INFAMY", Duration = 2,})
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/INFAMY.lua"))()
