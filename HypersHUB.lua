@@ -8,11 +8,14 @@ READ:AddLabel("You can now have fun with the Scripts")
 READ:AddLabel("Have a fantastic day :)")
 
 local ScriptHub = window:AddTab("Script Hub")
+ScriptHub:AddLabel("GUI Options")
+
 ScriptHub:AddButton("Close Hypers Hub", function()
     game.CoreGui.imgui:Destroy()
 end)
 
 ScriptHub:AddLabel("")
+ScriptHub:AddLabel("Scripts")
 
 ScriptHub:AddButton("Infamy", function()
     game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "INFAMY", Duration = 2,})
@@ -51,7 +54,6 @@ ScriptHub:AddButton("Sell Jewelry!", function()
 end)
 
 local Credits = window:AddTab("Credits")
-Credits:AddLabel("Script Hub made by: cooolchillX")
 
 Credits:AddButton("cooolchill_X's Github link", function()
     setclipboard("https://github.com/cooolchillX/cooolchillX-HUB/blob/main/HUB.lua")
