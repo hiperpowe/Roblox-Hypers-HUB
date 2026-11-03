@@ -1,6 +1,9 @@
 ------------------------------------------------------------------Hypers HUB CREATED----------------------------------------------------------------------------------
 LATEST UPDATES ARE AT THE TOP
 
+11/2/2026
+Updated West Wood Remake (New GUI)
+
 10/31/2026
 Updated HypersHub (New GUI)
 Updated INFAMY (New GUI)
