@@ -1,6 +1,9 @@
 ------------------------------------------------------------------Hypers HUB CREATED----------------------------------------------------------------------------------
 LATEST UPDATES ARE AT THE TOP
 
+11/4/2026
+Updated Tycoon RNG: Refinery (New GUI)
+
 11/2/2026
 Updated West Wood Remake (New GUI)
 
