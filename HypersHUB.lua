@@ -17,6 +17,12 @@ end)
 ScriptHub:AddLabel("")
 ScriptHub:AddLabel("Scripts")
 
+ScriptHub:AddButton("Backrooms Company", function()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Backrooms Company", Duration = 2,})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/Backrooms%20Company.lua"))()
+    game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "Backrooms Company", Duration = 2,})
+end)
+
 ScriptHub:AddButton("Infamy", function()
     game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "INFAMY", Duration = 2,})
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hiperpowe/Source-codes-for-Roblox-Scripts/refs/heads/main/INFAMY.lua"))()
